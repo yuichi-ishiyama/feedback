@@ -3,11 +3,19 @@ test-github4mac-A
 
 Github for Mac のテスト
 
+フィードバックの保存
+
+詳しくは下記参照
+
+https://yuichi-ishiyama.com/GetJson.php
+
 [使用方法]
 
 1)ソースコードをダウンロードしApache_Moduleディレクトリをサイトのルートに配置する
 
 2)以下の設定の通りに権限を設定する
+
+3)pagespeed.php, deflate.php, mod_cache.php, mod_expires.php の各ページでフィードバックを送信する
 
 [設定]
 
