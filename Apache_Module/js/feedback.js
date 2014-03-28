@@ -68,7 +68,7 @@ $(function() {
     		if (event.which == 13) {
     			var $textarea = $(this),
      			text = $textarea.val(),
-       			new_text = text.replace(/\n/g, "<br>");
+       			new_text = text.replace(/"/g, "&quot;");
     			if (new_text != text) {
   	    			$textarea.val(new_text);
     			}
@@ -82,7 +82,7 @@ $(function() {
 			}
 		}
 		}).bind('blur', function() {
-			$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback .text').val(),date2: $('#feedback .text2').val(),date3: $('#feedback .text3').val()},});
+//			$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback .text').val(),date2: $('#feedback .text2').val(),date3: $('#feedback .text3').val()},});
 		});
 		
 		$('#feedback .box').bind('click', function() {
@@ -98,7 +98,7 @@ $(function() {
 	topBtn5.bind('click', function () {
     	var $textarea = $('#feedback #cancelEnter'),
        	text = $textarea.val(),
-       	new_text = text.replace(/\n/g, "<br>");
+       	new_text = text.replace(/"/g, "&quot;");
     	if (new_text != text) {
   	    	$textarea.val(new_text);
     	}
@@ -108,9 +108,10 @@ $(function() {
 		$('#header').fadeIn(1000);
 		$('body').removeClass('noscroll');
 		$(window).scrollTop(scrollTop2);
+		$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback .text').val(),date2: $('#feedback .text2').val(),date3: $('#feedback .text3').val()},});
 		return false;
     }).bind('blur', function() {
-		$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback .text').val(),date2: $('#feedback .text2').val(),date3: $('#feedback .text3').val()},});
+//		$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback .text').val(),date2: $('#feedback .text2').val(),date3: $('#feedback .text3').val()},});
 	});
 });
 
@@ -179,7 +180,7 @@ $(function() {
     			if (event.which == 13) {
 					var $textarea = $(this),
        				text = $textarea.val(),
-        			new_text = text.replace(/\n/g, '\\n');
+       				new_text = text.replace(/"/g, "&quot;");
     				if (new_text != text) {
   	    				$textarea.val(new_text);
     				}
@@ -188,11 +189,12 @@ $(function() {
 					topBtn4.fadeOut(0);
 					$('body').removeClass('noscroll');
 					$(window).scrollTop(scrollTop2);
+			$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback_no .text_no').val(),date2: $('#feedback_no .text2_no').val(),date3: $('#feedback_no .text3_no').val()},});
         			return false;
 				}
 			}
 		}).bind('blur', function() {
-			$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback_no .text_no').val(),date2: $('#feedback_no .text2_no').val(),date3: $('#feedback_no .text3_no').val()},});
+//			$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback_no .text_no').val(),date2: $('#feedback_no .text2_no').val(),date3: $('#feedback_no .text3_no').val()},});
 		});
 		
 		$('#feedback_no .box').click(function() {
@@ -209,7 +211,7 @@ $(function() {
 	topBtn5_no.bind('click', function () {	
     	var $textarea = $('#feedback_no #cancelEnter2'),
        	text = $textarea.val(),
-        new_text = text.replace(/\n/g, '\\n');
+       	new_text = text.replace(/"/g, "&quot;");
     	if (new_text != text) {
   	    	$textarea.val(new_text);
     	}
@@ -219,9 +221,10 @@ $(function() {
 		$('#header').fadeIn(1000);
 		$('body').removeClass('noscroll');
 		$(window).scrollTop(scrollTop2);
+		$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback_no .text_no').val(),date2: $('#feedback_no .text2_no').val(),date3: $('#feedback_no .text3_no').val()},});
 		return false;
     }).bind('blur', function() {
-		$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback_no .text_no').val(),date2: $('#feedback_no .text2_no').val(),date3: $('#feedback_no .text3_no').val()},});
+//		$.ajax({ type: "POST", url: "write.php", data: {date: $('#feedback_no .text_no').val(),date2: $('#feedback_no .text2_no').val(),date3: $('#feedback_no .text3_no').val()},});
 	});	
 });
 /*
