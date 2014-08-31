@@ -77,4 +77,5 @@ drwxr-xr-x 2 apache apache ... feedback_log
 
 -rw-r--r-- 1 apache apache ... 2014 2014_03_11.json
 
-「failed to copy $file...」とエラーが表示される場合feedback.jsonとその日の一時ファイがapache権限になっているか確認してください。
+「failed to copy $file...」とエラーが表示される場合は
+feedback.json とその日の一時ファイルが apache 権限になっているか確認してください。
