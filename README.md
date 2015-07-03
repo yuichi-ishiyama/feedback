@@ -13,7 +13,7 @@ https://goo.gl/SFIksF
 
 1)ソースコードをダウンロードしApache_Moduleディレクトリをサイトのルートに配置する
 
-2)以下の設定の通りに権限を設定する
+2)以下の [設定] の通りに権限を設定する
 
 3)pagespeed.php, deflate.php, mod_cache.php, mod_expires.php の各ページでフィードバックを送信する
 
