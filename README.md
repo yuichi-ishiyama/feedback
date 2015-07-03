@@ -7,7 +7,7 @@ Github for Mac のテスト
 
 詳しくは下記参照
 
-https://yuichi-ishiyama.com/Apache_Module/GetJson.php
+https://goo.gl/SFIksF
 
 [使用方法]
 
